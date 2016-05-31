@@ -8,3 +8,17 @@ gulp.task('less', function () {
     }))
     .pipe(gulp.dest('./dest/css'));
 });
+
+var gulp = require('gulp');  
+var browserSync = require('browser-sync');  
+gulp.task('watch', function () {  
+  gulp.watch('src/css/*.less', ['css', browserSync.reload]);
+  gulp.watch('src/js/*.js', ['js', browserSync.reload]);
+  gulp.watch('src/*.html', ['html', browserSync.reload]);
+});
+gulp.task('browser-sync', function() {  
+  browserSync({
+    proxy: "http://localhost:2368"
+  });
+});
+

@@ -9,6 +9,7 @@
     "save-dev": "^2.0.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.12.10",
     "gulp": "^3.9.1",
     "gulp-less": "^3.1.0"
   },
