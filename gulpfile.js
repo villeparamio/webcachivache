@@ -9,9 +9,13 @@ gulp.task('less', function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(gulp.dest('./dest/css'));
+    .pipe(gulp.dest('./dest/css/'));
 });
 
+gulp.task('copy-img', function(){
+  return gulp.src('src/img/*')
+    .pipe(gulp.dest('./dest/img/'));
+});
 
 gulp.task('watch', function () {  
   gulp.watch('src/css/*.less', ['less', browserSync.reload]);
@@ -30,9 +34,9 @@ gulp.task('browser-sync', function() {
 gulp.task('html', function() {
   return gulp.src('src/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dest/html'))
+    .pipe(gulp.dest('dest/'))
 });
 
-gulp.task('default' , ['watch','less','html','browser-sync']);
+gulp.task('default' , ['watch','less', 'copy-img','html','browser-sync']);
 
 
