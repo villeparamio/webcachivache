@@ -1,7 +1,7 @@
 var less = require('gulp-less');
 var path = require('path');
 var gulp = require('gulp');  
-var browserSync = require('browser-sync');  
+var browserSync = require('browser-sync').create();  
 
 gulp.task('less', function () {
   return gulp.src('./src/css/*.less')
@@ -19,8 +19,11 @@ gulp.task('watch', function () {
 });
 
 gulp.task('browser-sync', function() {  
-  browserSync({
-    proxy: "http://localhost:2368"
+  browserSync.init({
+    server: {
+		baseDir: "./dest/"	
+	}
+	});
 });
 
 
