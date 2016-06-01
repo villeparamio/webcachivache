@@ -22,10 +22,9 @@ gulp.task('browser-sync', function() {
   browserSync({
     proxy: "http://localhost:2368"
 });
-gulp.task('cachivache' ,function(){
-gulp.watch('./src/css/*.less',['less']);
-});
+
 
 gulp
 gulp.task('default' , ['less','watch','browser-sync']);
+
 
