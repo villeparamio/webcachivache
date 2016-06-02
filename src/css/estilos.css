@@ -28,3 +28,8 @@ nav{
     background-color: rgba(0, 0, 0, 0.86);
 
 }
+ul li{
+    display: inline-block;
+    position: fixed;
+
+}
