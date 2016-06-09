@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
+/*******Mixins********/
+.fuente400 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
 .posicion {
   position: fixed;
   top: 0;
@@ -6,6 +12,7 @@
   right: 0;
   margin: 0;
 }
+/*******Código CSS********/
 .fondo {
   position: fixed;
   top: 0;
@@ -13,19 +20,27 @@
   left: 0;
   right: 0;
   margin: 0;
-  background-color: #595959;
+  background-image: url("../img/fondo.png");
+  background-repeat: repeat;
   z-index: 1;
 }
 body {
   margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
 header {
   height: 319px;
   width: 921px;
   z-index: 10;
   margin: 0 auto;
-  background-image: url("../img/portada.png");
-  background-repeat: no-repeat;
+}
+.logo a {
+  display: block;
+  width: 120px;
+  height: 68px;
+  background: transparent url("../img/logo.png");
+  text-decoration: none;
 }
 nav {
   height: 89px;
