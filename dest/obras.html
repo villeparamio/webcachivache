@@ -1,0 +1,9 @@
+<!doctype html><html lang="es"><head><meta charset="UTF-8"><title>Cachivache-Inicio</title><link rel="stylesheet" href="css/estilos.css"></head><body><div class="fondo"><nav style="color: white"><div class="logo"><a href="/" title="Inicio"><img src="img/logonormal.png" id="imagenlogo" alt="" width="100%" height="100%"></a></div><ul><li><a href="/">Home</a></li><li><a href="obras.html">Obras</a></li><li><a href="prox_actu.html">Proximas actuaciones</a></li><li><a href="premios.html">Premios</a></li></ul></nav></div><script src="js/jquery-2.2.3.min.js"></script><script>$(function(){
+            $('#imagenlogo')
+                .on('mouseover', function (e) {
+                    $(this).attr('src', "img/logohover.png")
+                })
+                .on('mouseout', function (e) {
+                    $(this).attr('src', "img/logonormal.png")
+                })
+        })</script></body></html>

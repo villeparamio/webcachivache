@@ -31,14 +31,13 @@ body {
 }
 header {
   height: 80px;
-  width: 921px;
+  width: 1000px;
   z-index: 10;
   margin: 0 auto;
 }
 .logo {
   display: inline-block;
   width: 300px;
-  border: solid white 2px;
   float: left;
 }
 ul {
@@ -57,16 +56,11 @@ nav {
   z-index: 15;
   margin: auto;
   margin-top: 60px;
-  border: solid white 5px;
+  border-bottom: solid white 5px;
 }
 nav a {
   text-decoration: none;
   color: white;
-}
-nav a:hover {
-  -webkit-box-shadow: 8px 4px 28px 11px #000000;
-  -moz-box-shadow: 8px 4px 28px 11px #000000;
-  box-shadow: 8px 4px 28px 11px #000000;
 }
 nav ul li {
   display: inline-block;
@@ -75,4 +69,12 @@ nav ul li {
   border: solid white 2px;
   margin: 0;
   text-align: center;
+}
+section {
+  margin: 0 auto;
+  width: 1100px;
+}
+section h1 {
+  text-align: center;
+  color: white;
 }
