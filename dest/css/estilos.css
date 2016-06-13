@@ -78,3 +78,10 @@ section h1 {
   text-align: center;
   color: white;
 }
+#carteles {
+  z-index: 50;
+}
+#carteles figure {
+  width: 200px;
+  height: 100px;
+}
