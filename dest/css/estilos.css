@@ -4,6 +4,15 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
 }
+.secciones {
+  width: 700px;
+  color: #c6c6c6;
+  text-align: justify;
+  position: relative;
+  top: 0;
+  left: -200px;
+  z-index: 50;
+}
 .posicion {
   position: fixed;
   top: 0;
@@ -28,12 +37,17 @@ body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
+  overflow-y: scroll;
 }
 header {
   height: 80px;
   width: 1000px;
   z-index: 10;
   margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  color: white;
 }
 .logo {
   display: inline-block;
@@ -74,14 +88,33 @@ section {
   margin: 0 auto;
   width: 1100px;
 }
-section h1 {
-  text-align: center;
-  color: white;
-}
 #carteles {
   z-index: 50;
 }
 #carteles figure {
   width: 200px;
   height: 100px;
+}
+.home {
+  width: 700px;
+  color: #c6c6c6;
+  text-align: justify;
+  position: relative;
+  top: 0;
+  left: -200px;
+  z-index: 50;
+}
+.home img {
+  width: 440px;
+  height: 330px;
+  float: right;
+}
+.premios {
+  width: 700px;
+  color: #c6c6c6;
+  text-align: justify;
+  position: relative;
+  top: 0;
+  left: -200px;
+  z-index: 50;
 }
