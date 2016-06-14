@@ -5,12 +5,12 @@
     font-weight: 400;
 }
 .secciones{
-    width: 700px;
+    width: 1000px;
     color: #c6c6c6;
     text-align: justify;
     position: relative;
     top:0;
-    left:-200px;
+    left:0;
     z-index: 50;
 }
 .posicion{
@@ -76,7 +76,7 @@ nav {
         display: inline-block;
         width: 150px;
         height: 50px;
-        border: solid white 2px;
+        font-size: 1.5em;
         margin: 0;
         text-align: center;
     }
@@ -86,15 +86,22 @@ section{
     width: 1100px;
 }
 #carteles{
-    z-index: 50;
+    .secciones;
     figure{
+        display: inline-block;
         width: 200px;
         height: 100px;
+        margin: 20px;
+        img{
+            width: 200px;
+            height: 300px;
+        }
     }
  }
 .home{
     .secciones;
     img{
+      margin: 30px;
       width: 440px;
       height: 330px;
       float: right;
@@ -108,5 +115,7 @@ section{
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: silver;
+}
+.premios{
+    .secciones;
 }
