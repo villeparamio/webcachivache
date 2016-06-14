@@ -20,33 +20,57 @@
         </nav>
         <section id="carteles">
             <article>
-                <figure><img src="img/cartel%20calabazanos%202004.png" alt=""><figcaption>Calabazanos</figcaption></figure>
-                <figure><img src="img/cartel-altra.jpg" alt=""><figcaption>Atra Bilis</figcaption></figure>
-                <figure><img src="img/cartelmujernegro.png" alt="">
+                <figure><img src="img/cartel%20calabazanos%202004.png" alt="" id="im1"><figcaption>Calabazanos</figcaption></figure>
+                <figure><img src="img/cartel-altra.jpg" alt="" id="im2"><figcaption>Atra Bilis</figcaption></figure>
+                <figure><img src="img/cartelmujernegro.png" alt="" id="im3">
                     <figcaption>La mujer de negro</figcaption>
                 </figure>
-                <figure><img src="img/un%20corazon%20lleno%20de%20lluvia.png" alt="">
+                <figure><img src="img/un%20corazon%20lleno%20de%20lluvia.png" alt="" id="im4">
                     <figcaption>Un corazón lleno de lluvia</figcaption>
                 </figure>
-                <figure><img src="img/FARSAS~1.png" alt="">
+                <figure><img src="img/FARSAS~1.png" alt="" id="im5">
                     <figcaption>Farsas Contemporáneas</figcaption>
                 </figure>
-                <figure><img src="img/soliloquioF2.png" alt="">
+                <figure><img src="img/soliloquioF2.png" alt="" id="im6">
                     <figcaption>Soliloquío de grillos</figcaption>
                 </figure>
+                <div id="full">
+                    <div id="imagen"></div>
+                </div>
             </article>
         </section>
     </div>
     <script src="js/jquery-2.2.3.min.js"></script>
     <script>
         $(function(){
-            $(this).attr('src', "img/logonormal.png")
             $('#imagenlogo')
-                .on('mouseover', function (e) {
-                    $(this).attr('src', "img/logohover.png")
+                    .on('mouseover', function (e) {
+                        $(this).attr('src', "img/logohover.png")
+                    })
+                    .on('mouseout', function (e) {
+                        $(this).attr('src', "img/logonormal.png")
+                    })
+        })
+    </script>
+    <script>
+        $(function () {
+            $('img')
+                .on('click', function (e) {
+                    $('#full').css({
+                        "display":"block"
+                    })
+
+                });
+            $('#full').on('click', function (e) {
+                $('#full').css({
+                    "display":"none"
                 })
-            .on('mouseout', function (e) {
+            });
+            $('#im1').on('click', function (e) {
+                $('#imagen').css({
+                    "backgroung-image":"url('img/cartel%20calabazanos%202004.png')"
                 })
+            })
         })
     </script>
 </body>
