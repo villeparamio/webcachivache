@@ -109,12 +109,13 @@ section {
   height: 330px;
   float: right;
 }
-.premios {
-  width: 700px;
-  color: #c6c6c6;
-  text-align: justify;
+.home p {
+  margin: 10px;
+  padding: 10px;
+}
+#contacto {
   position: relative;
-  top: 0;
-  left: -200px;
-  z-index: 50;
+  bottom: 0;
+  width: 100%;
+  background-color: silver;
 }
