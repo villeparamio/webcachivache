@@ -5,12 +5,13 @@
   font-weight: 400;
 }
 .secciones {
-  width: 1000px;
+  width: 80%;
   color: #c6c6c6;
   text-align: justify;
   position: relative;
   top: 0;
   left: 0;
+  margin: auto;
   z-index: 50;
 }
 .posicion {
@@ -32,6 +33,7 @@
   background-image: url("../img/fondo.png");
   background-repeat: repeat;
   z-index: 1;
+  overflow: auto;
 }
 body {
   margin: 0;
@@ -65,10 +67,10 @@ ul {
 }
 nav {
   height: 190px;
-  width: 1100px;
+  width: 100%;
   z-index: 15;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 30px;
   border-bottom: solid white 5px;
 }
 nav a {
@@ -89,12 +91,13 @@ section {
 }
 #carteles {
   position: fixed;
-  width: 1000px;
+  width: 80%;
   color: #c6c6c6;
   text-align: justify;
   position: relative;
   top: 0;
   left: 0;
+  margin: auto;
   z-index: 50;
 }
 #carteles figure {
@@ -133,12 +136,13 @@ section {
   background-size: cover;
 }
 .home {
-  width: 1000px;
+  width: 80%;
   color: #c6c6c6;
   text-align: justify;
   position: relative;
   top: 0;
   left: 0;
+  margin: auto;
   z-index: 50;
 }
 .home img {
@@ -161,27 +165,44 @@ section {
   float: right;
 }
 .premios {
-  width: 1000px;
+  width: 80%;
   color: #c6c6c6;
   text-align: justify;
   position: relative;
   top: 0;
   left: 0;
+  margin: auto;
   z-index: 50;
 }
-@media screen and (max-height: 950px) {
-  article {
-    position: relative;
-    overflow-y: scroll;
-    height: 350px;
-  }
+#menuquery {
+  display: none;
 }
-@media screen and (max-height: 700px) {
+#menuquery p {
+  width: 120px;
+  height: 30px;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: solid 1px whitesmoke;
+  margin-top: 25px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+  color: #414141;
+}
+@media screen and (max-width: 960px), (max-height: 800px) {
   #imagenlogo {
     margin-top: -40px;
   }
+  #menuquery {
+    display: inline-block;
+  }
   .home {
-    width: 450px;
+    width: 90%;
+    margin-left: 25px;
+  }
+  #obras {
+    width: 90%;
   }
   h1 {
     margin-top: 80px;
@@ -190,5 +211,8 @@ section {
     position: relative;
     margin-top: 0;
     height: 100px;
+  }
+  ul {
+    display: none;
   }
 }
