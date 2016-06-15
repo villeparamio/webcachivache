@@ -37,7 +37,6 @@ body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
-  overflow-y: scroll;
 }
 header {
   height: 80px;
@@ -89,6 +88,7 @@ section {
   width: 1100px;
 }
 #carteles {
+  position: fixed;
   width: 1000px;
   color: #c6c6c6;
   text-align: justify;
@@ -120,12 +120,17 @@ section {
   height: 100%;
   display: none;
 }
-#carteles #imagen {
+#carteles #full #imagen {
   position: fixed;
-  top: 200px;
-  left: 500px;
+  top: 50%;
+  margin-top: -500px;
+  left: 50%;
+  margin-left: -400px;
+  right: 25%;
   width: 800px;
-  height: 900px;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .home {
   width: 1000px;
@@ -159,4 +164,27 @@ section {
   top: 0;
   left: 0;
   z-index: 50;
+}
+@media screen and (max-height: 950px) {
+  article {
+    position: relative;
+    overflow-y: scroll;
+    height: 350px;
+  }
+}
+@media screen and (max-height: 700px) {
+  #imagenlogo {
+    margin-top: -40px;
+  }
+  .home {
+    width: 450px;
+  }
+  h1 {
+    margin-top: 80px;
+  }
+  nav {
+    position: relative;
+    margin-top: 0;
+    height: 100px;
+  }
 }
