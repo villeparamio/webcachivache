@@ -1,4 +1,4 @@
-<!doctype html><html lang="es"><head><meta charset="UTF-8"><title>Cachivache-Inicio</title><link rel="stylesheet" href="css/estilos.css"></head><body><div class="fondo"><nav style="color: white"><div class="logo"><a href="/" title="Inicio"><img src="img/logonormal.png" id="imagenlogo" alt="" width="100%" height="100%"></a></div><div id="menuquery"><p>Menú</p></div><ul><li><a href="/">Home</a></li><li><a href="obras.html">Obras</a></li><li><a href="prox_actu.html">Proximas actuaciones</a></li><li><a href="premios.html">Premios</a></li></ul></nav><section id="actuaciones"><h3>Proximas Actuaciones</h3><h4>Un corazon lleno de lluvia</h4><p>11 de Agosto de 2016 en le Teatro Federico Garcia Lorca, Madrid <a href=""><img src="" alt=""></a></p><p>17 Septiembre de 2016 en el Teatro Jesus de Meneses, Palencia</p><p>22 de Octubre de 2016 en el Centro Culturial Figueras, Asturias</p><p>29 de Octubre 2016 en el Teatro Bergidum, León</p><h4>Soliloquio de grillos</h4><p>9 de Marzo de 2016 en el Teatro Lagasca, Avila</p><p>27 de Abril de 2016 en el Teatro Lope de Vega, Madrid</p><p>6 de Octubre 2016 en el Teatro Manuel Mayo, Madrid</p><p>28 de Octubre de 2016 en el Teatro Bergidum, León</p><h4>Atra Bilis</h4><p>30 de Junio de 2016 en el Teatro Cervantes, Salamanca</p><p>7 de Octubre de 2016 en el Teatro Instituto Marqués de Santillana, Santander</p><p>3 de Noviembre de 2016 en la Asociacion cultural amigos de Barbadillo, Burgos</p><p>1 de Diciembre de 2016 en el Teatro Principal, Palencia</p></section></div><script src="js/jquery-2.2.3.min.js"></script><script>$(function(){
+<!doctype html><html lang="es"><head><meta charset="UTF-8"><title>Cachivache-Inicio</title><link rel="stylesheet" href="css/estilos.css"></head><body><div class="fondo"><nav style="color: white"><div class="logo"><a href="/" title="Inicio"><img src="img/logonormal.png" id="imagenlogo" alt="" width="100%" height="100%"></a></div><div id="menuquery"><p id="home"></p><p id="obras"></p><p id="actu"></p><p id="premios"></p></div><ul id="menu"><li><a href="/">Home</a></li><li><a href="obras.html">Obras</a></li><li><a href="prox_actu.html">Proximas actuaciones</a></li><li><a href="premios.html">Premios</a></li></ul></nav><section id="actuaciones"><h3>Proximas Actuaciones</h3><h4>Un corazon lleno de lluvia</h4><p>11 de Agosto de 2016 en le Teatro Federico Garcia Lorca, Madrid <a href=""><img src="" alt=""></a></p><p>17 Septiembre de 2016 en el Teatro Jesus de Meneses, Palencia</p><p>22 de Octubre de 2016 en el Centro Culturial Figueras, Asturias</p><p>29 de Octubre 2016 en el Teatro Bergidum, León</p><h4>Soliloquio de grillos</h4><p>9 de Marzo de 2016 en el Teatro Lagasca, Avila</p><p>27 de Abril de 2016 en el Teatro Lope de Vega, Madrid</p><p>6 de Octubre 2016 en el Teatro Manuel Mayo, Madrid</p><p>28 de Octubre de 2016 en el Teatro Bergidum, León</p><h4>Atra Bilis</h4><p>30 de Junio de 2016 en el Teatro Cervantes, Salamanca</p><p>7 de Octubre de 2016 en el Teatro Instituto Marqués de Santillana, Santander</p><p>3 de Noviembre de 2016 en la Asociacion cultural amigos de Barbadillo, Burgos</p><p>1 de Diciembre de 2016 en el Teatro Principal, Palencia</p></section></div><script src="js/jquery-2.2.3.min.js"></script><script>$(function(){
             $('#imagenlogo')
                 .on('mouseover', function (e) {
                     $(this).attr('src', "img/logohover.png")
@@ -6,4 +6,17 @@
                 .on('mouseout', function (e) {
                     $(this).attr('src', "img/logonormal.png")
                 })
+        })</script><script>$(function () {
+            $('#home').on('click', function (e) {
+                location.href = "/";
+            });
+            $('#obras').on('click', function (e) {
+                location.href = "obras.html";
+            });
+            $('#actu').on('click', function (e) {
+                location.href = "prox_actu.html";
+            });
+            $('#premios').on('click', function (e) {
+                location.href = "premios.html";
+            });
         })</script></body></html>

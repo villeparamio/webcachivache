@@ -146,6 +146,13 @@ background-color: white;
     width: 90px;
     height: 40px;
 }
+#jorge{
+    display: inline-block;
+    float: right;
+    margin: 15px;
+    width: 420px;
+    margin-left: -300px;
+}
 #actuaciones{
     background-color: rgba(255, 255, 255, 0.2);
     padding: 10px;
@@ -155,27 +162,43 @@ background-color: white;
 }
 #menuquery{
     display: none;
+    width: 255px;
+    margin-top: 15px;
+    margin-left: -30px;
     p{
-        width: 120px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         font-size: 1.5em;
-        margin: 0;
         padding: 0;
         text-align: center;
         border: solid 1px whitesmoke;
         margin-top: 25px;
-        border-radius: 25px;
-        background-color: whitesmoke;
-        color: rgba(65, 65, 65, 1);
+        border-radius: 7px;
+        background-color: white;
     }
 }
-
+#home{
+    background-image: url("../img/casa50.png");
+}
+#obras{
+    background-image: url("../img/ticket2.png");
+}
+#actu{
+    background-image: url("../img/calendario2.png");
+}
+#premios{
+    background-image: url("../img/premio50.png");
+}
 @media screen and (max-width: 960px),(max-height: 800px){
     #imagenlogo{
        margin-top: -40px;
     }
     #menuquery{
         display: inline-block;
+        p{
+            display: inline-block;
+            margin: 5px;
+        }
     }
     .home{
        width: 90%;
@@ -192,7 +215,7 @@ background-color: white;
         margin-top: 0;
         height: 100px;
    }
-   ul{
+   #menu{
        display: none;
    }
    #responsive{
@@ -204,5 +227,8 @@ background-color: white;
    }
    #menuquery:hover{
        visibility: visible;
+   }
+   #jorge{
+       display: none;
    }
 }
