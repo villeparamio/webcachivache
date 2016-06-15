@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div class="fondo">
         <nav style="color: white">
             <div class="logo">
@@ -19,6 +27,7 @@
             </ul>
         </nav>
         <h1>Bienvenido a la página web del grupo de teatro Cachivache</h1>
+
         <section class="home">
             <h2>¿Quienes somos?</h2>
             <article>
@@ -34,14 +43,17 @@
                     todo el territorio español.</p>
                 <p>Desde 1999, Cachivache forma parte de la Federación de grupos de teatro aficionado de C
                     astilla y León, en la cual dos de los componentes del grupo participan en  la Junta Directiva.</p>
+
             </article>
             <section id="contacto">
+                <div class="fb-comments" data-href="https://www.facebook.com/Teatro-Cachivache-182332245149194/?ref=ts&amp;fref=ts#" data-width="300px" data-numposts="4"></div>
                 <p>Puedes contactar con nosotros a traves de: <br>Jesús (Presidente) Telf: 629038832 email: jesus@cachivache.com
                     <br> Oscar (Secretario) Telf: 636828424 email: oscargonzalo2004@yahoo.es <br>
                 </p>
             </section>
         </section>
     </div>
+
     <script src="js/jquery-2.2.3.min.js"></script>
     <script>
         $(function(){
