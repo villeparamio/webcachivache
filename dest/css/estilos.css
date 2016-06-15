@@ -164,6 +164,14 @@ section {
   background-color: white;
   float: right;
 }
+.twitter-timeline {
+  width: 90px;
+  height: 40px;
+}
+#actuaciones {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
 .premios {
   width: 80%;
   color: #c6c6c6;
